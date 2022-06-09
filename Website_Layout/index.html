@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website_Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header,
+      .footer {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        opacity: 0.7;
+        line-height: 0.5;
+      }
+
+      .footer {
+        margin-top: 10px;
+      }
+
+      nav {
+        background-color: #ccc;
+        overflow: hidden;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #0000004b;
+        overflow: hidden;
+      }
+      li {
+        float: left;
+        /* margin: 20px; */
+      }
+      li a {
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        color: white;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+
+      .container {
+        margin-top: 10px;
+      }
+
+      .row {
+        margin-top: 10px;
+      }
+
+      .column {
+        width: 33%;
+        float: left;
+        padding: 20px;
+        background-color: #ddd;
+        border: 1px solid #ccc;
+        margin-right: 3px;
+      }
+      div.column:last-child {
+        margin-right: 0px;
+      }
+
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Header</h1>
+      <p>This is header</p>
+    </div>
+    <div class="container">
+      <ul>
+        <li><a class="one" href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
+        <li><a style="margin-left: 0px" href="#">Link4</a></li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <p><b>Column1</b></p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+          dolores dolor? Pariatur consequuntur enim deserunt, placeat sequi sunt
+          modi ullam nemo repellat assumenda in exercitationem natus accusantium
+          non, consequatur sit obcaecati reprehenderit dolorum tempore culpa hic
+          maiores! Nostrum nesciunt ea cumque eaque consectetur iure, in dolor
+          sequi numquam ut obcaecati!
+        </p>
+      </div>
+
+      <div class="column">
+        <p><b>Column2</b></p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+          dolores dolor? Pariatur consequuntur enim deserunt, placeat sequi sunt
+          modi ullam nemo repellat assumenda in exercitationem natus accusantium
+          non, consequatur sit obcaecati reprehenderit dolorum tempore culpa hic
+          maiores! Nostrum nesciunt ea cumque eaque consectetur iure, in dolor
+          sequi numquam ut obcaecati!
+        </p>
+      </div>
+
+      <div class="column">
+        <p><b>Column3</b></p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+          dolores dolor? Pariatur consequuntur enim deserunt, placeat sequi sunt
+          modi ullam nemo repellat assumenda in exercitationem natus accusantium
+          non, consequatur sit obcaecati reprehenderit dolorum tempore culpa hic
+          maiores! Nostrum nesciunt ea cumque eaque consectetur iure, in dolor
+          sequi numquam ut obcaecati!
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h1>Footer</h1>
+      <p>This is footer</p>
+    </div>
+  </body>
+</html>
